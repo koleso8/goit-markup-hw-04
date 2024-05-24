@@ -137,6 +137,13 @@ button {
     left: 0;
 }
 
+.col {
+    color: #404bbf;
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .address {
 }
 .address-list {
@@ -149,26 +156,34 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
 .address-link:focus {
     color: #404bbf;
 }
-
+.col {
+    color: #404bbf;
+}
 /* #endregion HEADER */
 
 /* #region HERO */
 
 .hero {
-    background-color: #2e2f42;
+    /* background-color: #2e2f42; */
     padding: 188px 0;
     display: flex;
-    background-image: url(../images/dark-bg.png),
+    background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ),
         url(../images/people-office.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    /* background-size: auto; */
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .hero .container {
@@ -200,6 +215,7 @@ button {
     height: 56px;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover,
@@ -238,11 +254,15 @@ button {
 }
 
 .benefits-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f4f4fd;
-    padding: 24px 100px;
+    /* padding: 24px 100px; */
     border: 1px solid #8e8f99;
     border-radius: 4px;
     margin-bottom: 8px;
+    height: 112px;
 }
 /* #endregion BENEFITS */
 
@@ -266,7 +286,7 @@ button {
     text-transform: capitalize;
     margin-bottom: 72px;
 }
-.tealm-list {
+.team-list {
     display: flex;
     justify-content: space-between;
     gap: 24px;
@@ -276,6 +296,8 @@ button {
     display: flex;
     flex-direction: column;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-item:last-child {
@@ -305,9 +327,10 @@ button {
 }
 .team-social-link {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 24px;
 }
-.circule {
+/* .circule {
     background-color: #4d5ae5;
     width: 40px;
     height: 40px;
@@ -315,13 +338,23 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 .circule:focus,
 .circule:hover {
     background-color: #404bbf;
 }
 .social-link-item {
     fill: #f4f4fd;
+}
+
+.team-list a {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* #endregion TEAM */
 
