@@ -330,6 +330,12 @@ button {
     justify-content: center;
     gap: 24px;
 }
+
+.team-link {
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* .circule {
     background-color: #4d5ae5;
     width: 40px;
@@ -339,10 +345,7 @@ button {
     justify-content: center;
     align-items: center;
 } */
-.circule:focus,
-.circule:hover {
-    background-color: #404bbf;
-}
+
 .social-link-item {
     fill: #f4f4fd;
 }
@@ -356,6 +359,11 @@ button {
     justify-content: center;
     align-items: center;
 }
+.team-list a:focus,
+.team-list a:hover {
+    background-color: #404bbf;
+}
+
 /* #endregion TEAM */
 
 /* #region PORTFOLIO */
